@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+h3, p {
+    margin: 0;
+}
+
+body {
+    background-color: #c0c0c0;
+    font-family: sans-serif;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn1,
+.btn2 {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.image {
+    max-width: 350px;
+    width: 100%;
+    min-width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.cards{
+    padding: 4rem 0;
+    background-color: #a10c98;
+    color: #ffffff;
+    text-align: center;
+}
+.load-user-btn {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    background-color: #7f7f7f;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.card{
+    border-radius: 0.5rem;
+    min-width: 17.5rem;
+    flex-basis: 18.75rem;
+    max-width: 20rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffffff;
+    position: relative;
+    margin-top: 4rem;
+    padding: 4.5rem 1.5rem 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-photo-wrapper{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    padding: 0.25rem;
+    background-color: #ffffff;
+    position: absolute;
+    top: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-photo{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #a10c98;
+    object-fit: cover;
+}
+.card-main-section{
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-bottom: 1rem;
+}
+.card-name{
+    color: #7f7f7f;
+    font-size: 2rem;
+}
+.card-nickname{
+    color: #7f7f7f;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+.card-birthday{
+    color: #8f8f8f;
+    font-size: 1rem;
+}
+.card-birthday-icon{
+    margin-right: 0.125rem;
+}
+.card-likes{
+    color: #8f8f8f;
+    font-size: 2rem;
+}
+.card-likes-icon{
+    margin-right: 0.125rem;
+}
