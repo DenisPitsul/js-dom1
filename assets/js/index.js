@@ -17,7 +17,7 @@ image.onmouseenter = e => image.src = './assets/images/cat2.jpg';
 image.onmouseout = e => image.src = './assets/images/cat1.jpg';
 
 // 4
-const cards = document.querySelector('.cards');
+const cardsEl = document.querySelector('.cards');
 const loadUserBtn = document.querySelector('.load-user-btn');
 
 const user = {
@@ -44,7 +44,7 @@ const user = {
 }
 
 loadUserBtn.addEventListener('click', e => {
-    cards.insertAdjacentHTML('beforeend', `
+    cardsEl.insertAdjacentHTML('beforeend', `
         <article class="card">
             <div class="card-photo-wrapper">
                 <img class="card-photo" src="${user.profilePhoto}" alt="${user.firstName} photo">
