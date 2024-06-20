@@ -29,9 +29,9 @@ const user = {
     likesCount: 10,
 
     getAge() {
-        var today = new Date();
-        var age = today.getFullYear() - this.birthday.getFullYear();
-        var m = today.getMonth() - this.birthday.getMonth();
+        const today = new Date();
+        let age = today.getFullYear() - this.birthday.getFullYear();
+        const m = today.getMonth() - this.birthday.getMonth();
         if (m < 0 || (m === 0 && today.getDate() < this.birthday.getDate())) {
             age--;
         }
